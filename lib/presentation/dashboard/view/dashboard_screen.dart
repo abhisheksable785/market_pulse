@@ -3,11 +3,11 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 
 import '../../SellShareScreen/view/sell_share_screen.dart';
 import '../../buy_share_screen/buy_share_screen.dart';
-import '../../portfolio/widgets/portfolio_card.dart';
 
 import '../view_model/market_bloc.dart';
 import '../view_model/market_state.dart';
 
+import '../widgets/custom_bottom_nav.dart';
 import '../widgets/wallet_card.dart';
 import '../widgets/market_ticker.dart';
 import '../widgets/stock_card.dart';
@@ -20,7 +20,9 @@ class DashboardScreen extends StatefulWidget {
 }
 
 class _DashboardScreenState extends State<DashboardScreen> {
-  int selectedIndex = 0;
+
+
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -153,6 +155,8 @@ class _DashboardScreenState extends State<DashboardScreen> {
           );
         },
       ),
+
+
     );
   }
 }

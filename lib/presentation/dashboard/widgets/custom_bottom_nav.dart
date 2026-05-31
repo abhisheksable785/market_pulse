@@ -31,10 +31,7 @@ class CustomBottomNav extends StatelessWidget {
         icon: Icons.account_balance_wallet_rounded,
         label: "Portfolio",
       ),
-      const BottomNavItem(
-        icon: Icons.show_chart_rounded,
-        label: "Market",
-      ),
+
       const BottomNavItem(
         icon: Icons.history_rounded,
         label: "History",
@@ -42,7 +39,7 @@ class CustomBottomNav extends StatelessWidget {
     ];
 
     return Container(
-      margin: const EdgeInsets.all(8),
+      margin: const EdgeInsets.all(16),
       padding: const EdgeInsets.all(8),
       decoration: BoxDecoration(
         color: const Color(0xFF19202E),
@@ -52,6 +49,7 @@ class CustomBottomNav extends StatelessWidget {
         ),
       ),
       child: Row(
+
         mainAxisAlignment: MainAxisAlignment.spaceAround,
         children: List.generate(
           items.length,

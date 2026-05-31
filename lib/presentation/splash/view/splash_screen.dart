@@ -1,5 +1,6 @@
 import 'dart:async';
 
+import 'package:digi_market/app/routes/IndexPage.dart';
 import 'package:flutter/material.dart';
 
 import '../../../app/routes/app_routes.dart';
@@ -61,10 +62,13 @@ class _SplashScreenState extends State<SplashScreen>
     Future.delayed(
       const Duration(seconds: 4),
           () {
-        Navigator.pushReplacementNamed(
-          context,
-          AppRoutes.dashboard,
-        );
+            Navigator.pushReplacement(
+              context,
+              MaterialPageRoute(
+                builder: (_) =>
+                const Indexpage(),
+              ),
+            );
       },
     );
   }
